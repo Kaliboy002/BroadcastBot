@@ -1,4 +1,11 @@
-import os
+API_HASH="e51a3154d2e0c45e5ed70251d68382de"
+API_ID="15787995"
+AUTH_USERS="7046488481"
+BOT_TOKEN="7964758764:AAFZgE2Oa-xjp80TCK91bpQ9fZ39RJ6m6wg"
+BROADCAST_AS_COPY="true"
+DB_NAME="myDatabase"
+DB_URL="mongodb+srv://Kali:SHM14002022SHM@cluster0.bxsct.mongodb.net/myDatabase?retryWrites=true&w=majority"
+LOG_CHANNEL="-1002410423843"import os
 import traceback
 import logging
 
@@ -30,7 +37,7 @@ Bot = Client(
 async def _(bot, cmd):
     await handle_user_status(bot, cmd)
 
-@Bot.on_message(filters.command("start") & filters.private)
+@Bot.on_message(filters.command("star") & filters.private)
 async def startprivate(client, message):
     # return
     chat_id = message.from_user.id
